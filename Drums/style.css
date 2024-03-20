@@ -1,0 +1,59 @@
+/* reset */
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* background img */
+
+body {
+  background-image: url("./assets/audience.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* letter style */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
+}
+.sound-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  border: 5px solid white;
+  padding: 50px;
+  transition: all 0.2s;
+}
+
+.letter {
+  color: white;
+  font-size: 8rem;
+}
+
+.beat {
+  color: gold;
+  font-size: 3.5rem;
+  gap: 50px;
+}
+
+.playing {
+  border: gold;
+  box-shadow: 0px 0px 10px gold;
+  margin: 50px;
+  scale: 110%;
+  background-color: hwb(51 45% 7% / 0.404);
+}

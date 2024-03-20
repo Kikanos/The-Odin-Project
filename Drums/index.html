@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sound-container">
+        <div data-key="65" class="box">
+          <kbd class="letter">A</kbd>
+        </div>
+        <div class="beat">Clap</div>
+      </div>
+
+      <div class="sound-container">
+        <div data-key="90" class="box">
+          <kbd class="letter">Z</kbd>
+        </div>
+        <div class="beat">Drum</div>
+      </div>
+
+      <div class="sound-container">
+        <div data-key="69" class="box">
+          <kbd class="letter">E</kbd>
+          >
+        </div>
+        <div class="beat">HearBeat</div>
+      </div>
+
+      <div class="sound-container">
+        <div data-key="82" class="box">
+          <kbd class="letter">R</kbd>
+        </div>
+        <kbd class="beat">Intro</kbd>
+      </div>
+    </div>
+
+    <audio data-key="65" src="assets/sounds/clap.wav">Clap</audio>
+    <audio data-key="90" src="assets/sounds/drum.wav">drum</audio>
+    <audio data-key="69" src="assets/sounds/heartBit.wav">heartBit</audio>
+    <audio data-key="82" src="assets/sounds/intro.wav">intro</audio>
+  </body>
+  <script type="module" src="script.js"></script>
+</html>
