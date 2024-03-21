@@ -5,5 +5,7 @@
 you can find live previews here :
 
 [Rock Paper Scissors ](https://kikanos.github.io/The-Odin-Project/newRockPaperScissors)
+
 [Landing Page](https://kikanos.github.io/The-Odin-Project/newLandingPage)
+
 [drums mini game](https://kikanos.github.io/The-Odin-Project/newDrums)
