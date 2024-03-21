@@ -29,11 +29,20 @@ looping on J and I to create rows, and columns of boxes
 
   for (let child of childNodes) {
     for (let box of child.childNodes) {
+      let opacity = 0;
       box.addEventListener("mouseover", () => {
-        const r = Math.floor(Math.random() * 255);
-        const g = Math.floor(Math.random() * 255);
-        const b = Math.floor(Math.random() * 255);
-        box.setAttribute("style", `background-color: RGB(${r},${g},${b})`);
+        opacity += 1;
+        if (opacity < 10) {
+          const r = Math.floor(Math.random() * 255);
+          const g = Math.floor(Math.random() * 255);
+          const b = Math.floor(Math.random() * 255);
+          box.setAttribute(
+            "style",
+            `background-color: RGB(${r},${g},${b}); opacity: ${opacity}`
+          );
+        } else {
+          box.setAttribute("style", `background-color: RGB(0,0,0)`);
+        }
       });
     }
   }
