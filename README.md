@@ -4,8 +4,10 @@
 
 you can find live previews here :
 
-[Rock Paper Scissors ](https://kikanos.github.io/The-Odin-Project/newRockPaperScissors)
+[Rock Paper Scissors ](https://kikanos.github.io/The-Odin-Project/RockPaperScissors)
 
-[Landing Page](https://kikanos.github.io/The-Odin-Project/newLandingPage)
+[Landing Page](https://kikanos.github.io/The-Odin-Project/LandingPage)
 
-[drums mini game](https://kikanos.github.io/The-Odin-Project/newDrums)
+[drums mini game](https://kikanos.github.io/The-Odin-Project/Drums/)
+
+[Etch-a-Sketch](https://kikanos.github.io/The-Odin-Project/Etch-a-Sketch/)
