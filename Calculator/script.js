@@ -1,4 +1,6 @@
 /* ============ button selections ============ */
+const display_solution = document.querySelector(".display-solution");
+const display = document.querySelector(".display");
 
 const btn_1 = document.querySelector(".one");
 const btn_2 = document.querySelector(".two");
@@ -37,6 +39,7 @@ let num_1;
 let operator;
 let num_2;
 let result;
+let display_value;
 
 function operate(num_1, operator, num_2) {
   if (operator === "+") {
@@ -51,10 +54,71 @@ function operate(num_1, operator, num_2) {
   if (operator === "/") {
     return (result = divide(num_1, num_2));
   }
-  return result;
 }
 
-/* ============ result display ============ */
+/* ============ calculation logic ============ */
 
-const display = document.querySelector(".display");
-display.textContent = result || "0.00";
+btn_add.addEventListener("click", () => {
+  num_2 = Number(display.firstChild.nodeValue);
+  if (num_1 === undefined) {
+    num_1 = 0;
+    operate(num_1, "+", num_2);
+    clearDisplay();
+  } else {
+    num_1 = result;
+    operate(num_1, "+", num_2);
+    clearDisplay();
+  }
+  display.textContent = "+";
+  display_solution.textContent = result;
+});
+
+btn_clear.addEventListener("click", () => {
+  clearDisplay();
+});
+/* ============ calculation result and display ============ */
+
+function displayNumber(x) {
+  display.textContent += x;
+}
+
+function clearDisplay() {
+  display.textContent = "";
+  display_solution.textContent = "";
+}
+
+btn_1.addEventListener("click", () => {
+  displayNumber(1);
+});
+btn_2.addEventListener("click", () => {
+  displayNumber(2);
+});
+btn_3.addEventListener("click", () => {
+  displayNumber(3);
+});
+btn_4.addEventListener("click", () => {
+  displayNumber(4);
+});
+btn_5.addEventListener("click", () => {
+  displayNumber(5);
+});
+btn_6.addEventListener("click", () => {
+  displayNumber(6);
+});
+btn_7.addEventListener("click", () => {
+  displayNumber(7);
+});
+btn_8.addEventListener("click", () => {
+  displayNumber(8);
+});
+btn_9.addEventListener("click", () => {
+  displayNumber(9);
+});
+
+/* down to here all good */
+
+btn_equal.addEventListener("click", () => {
+  operate(num_1, operator, num_2);
+
+  display.textContent = result;
+});

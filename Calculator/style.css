@@ -18,7 +18,7 @@ body {
   width: 350px;
 }
 
-.display {
+.display-container {
   box-shadow: 2px 1px 1px #000;
   display: flex;
   font-family: helvetica;
@@ -27,6 +27,20 @@ body {
   align-items: center;
   height: 30%;
   width: 100%;
+  flex-direction: column;
+}
+.display {
+  border: 2px solid yellow;
+  width: 100%;
+  height: 40%;
+}
+
+.display-solution {
+  border: 2px solid blueviolet;
+  font-size: 40px;
+  font-family: helvetica;
+  width: 100%;
+  height: 60%;
 }
 
 .num-container {
