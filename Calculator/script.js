@@ -1,4 +1,22 @@
-console.log("hello world");
+/* ============ button selections ============ */
+
+const btn_1 = document.querySelector(".one");
+const btn_2 = document.querySelector(".two");
+const btn_3 = document.querySelector(".three");
+const btn_4 = document.querySelector(".four");
+const btn_5 = document.querySelector(".five");
+const btn_6 = document.querySelector(".six");
+const btn_7 = document.querySelector(".seven");
+const btn_8 = document.querySelector(".eight");
+const btn_9 = document.querySelector(".nine");
+const btn_clear = document.querySelector(".clear");
+const btn_divide = document.querySelector(".divide");
+const btn_multiply = document.querySelector(".multiply");
+const btn_substract = document.querySelector(".substract");
+const btn_add = document.querySelector(".add");
+const btn_equal = document.querySelector(".equal");
+
+/* ============ functions ============ */
 
 function add(a, b) {
   return a + b;
@@ -12,6 +30,8 @@ function multiply(a, b) {
 function divide(a, b) {
   return a / b;
 }
+
+/* ============ operation function ============ */
 
 let num_1;
 let operator;
@@ -34,9 +54,7 @@ function operate(num_1, operator, num_2) {
   return result;
 }
 
-/* console.log(operate(4, "-", 2)); */
-
-/* ======================================= */
+/* ============ result display ============ */
 
 const display = document.querySelector(".display");
 display.textContent = result || "0.00";
